@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+.body{
+    margin: 0;
+    padding:0 ;
+}
+
+.titulo-matissa{
+    background-color: #444444;   
+    color: white;
+    font-family: 'Merienda', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout{
+    background-color: #231f20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.logout a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.logout b{
+    margin: 10px;
+}
+
+.menu-desplegable{
+    background-color: #231f20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    display: none;
+}
+
+.menu-desplegable button{
+    background-color: #231f20;
+    color: white;
+    border: none;
+}
+
+@media screen and (max-width: 600px) {
+    .menu-desplegable{
+        display: flex;
+    }
+
+    .nombre-usuario{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .logout{
+        font-size: 10px;
+    }
+}
+
+.sidebar-matissa, .sidebar-matissa-desplegable{
+    background-color: #e2d4ff;
+    height: 90vh;
+    margin-top: 1000px;
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar-matissa-desplegable{
+        display: none;
+    }
+}
+
+.sidebar-matissa a, .sidebar-matissa-desplegable a{
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar-p{
+    background-color: #a7e3e1;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 7px 10px black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-top: -12px;
+}
+
+.sidebar-p:hover{
+    color: white;
+    background-color: #3cc3bd;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px 0px black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-top: -12px;
+}
+
+@media screen and (max-width:700px) {
+    .sidebar-p{
+        font-size: 15px;
+    }
+
+    .sidebar-p:hover{
+        font-size: 15px;
+    }
+}
+
+.menu{
+    font-family: "Merienda";
+    font-size: 35px;
+    text-shadow: 1px 2px 4px black;
+    padding: 5px;
+}
+
+img{
+    width: 25%;
+}
+
+
+.frame{
+ height: 99%;
+ width: 100%;
+}
+
+@media screen and (max-width:912px) {
+    .frame {
+        height: 100%;
+        width: 103.5%;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .frame{
+        height: 100%;
+        width: 104%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .frame {
+        height: 100%;
+        width: 104%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .frame {
+        height: 100%;
+        width: 150%;
+    }
+}
+
+@media screen and (max-width:523px) {
+    .frame{
+        margin-left: -20px;
+        height: 100vh;
+        width: 109%;
+    }
+}

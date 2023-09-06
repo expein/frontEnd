@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="./proveedores.js"></script>
+    <link rel="stylesheet" href="./style/proveedores.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid titulo-proveedores titulo-proveedor" id="ocultar">
+        <div class="row">
+          <div class="col-12">
+            <h1>Listado de proveedores</h1>
+          </div>
+        </div>
+    </div>
+    <div class="container-fluid titulo-proveedores titulo-agregar-proveedor" id="mostrar" style="display: none;">
+      <div class="row">
+        <div class="col-12">
+          <h1>Agregar nuevo proveedor</h1>
+        </div>
+      </div>
+  </div>
+  <div class="container-fluid form-agregar-proveedor" id="mostrarForm" style="display: none;">
+    <div class="row">
+      <form action="" onsubmit="return validacion()">
+        <div class="row">
+          <div class="col">
+            <label for="">Codigo proveedor</label><br>
+            <input class="rounded-pill" type="text" name="id" value="1" id="" readonly>
+          </div>
+          <div class="col">
+            <label for="">Tipo de proveedor</label><br>
+            <select class="rounded-pill" name="tipo-proveedor" id="tipoProveedor">
+              <option value="0">Seleccione</option>
+              <option value="1">Empresa</option>
+              <option value="2">Persona</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="">Nombre</label><br>
+            <input class="rounded-pill" type="text" name="name" id="nombre">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="">Dirección</label><br>
+            <input class="rounded-pill" type="text" name="direccion" id="address">
+          </div>
+          <div class="col">
+            <label for="">Telefono</label><br>
+            <input class="rounded-pill" type="text" name="phone" id="phone">
+          </div>
+          <div class="col">
+            <label for="">Estado</label><br>
+            <select class="rounded-pill" name="state" id="state">
+              <option value="0">Seleccione</option>
+              <option value="1">Deshabilitado</option>
+              <option value="2">Habilitado</option>
+            </select>
+          </div>
+        </div>
+        <div class="row justify-content-center botones">
+          <div class="col text-end">
+            <input type="button" class="boton-cancelar rounded-pill" value="Cancelar" onclick="crearProveedor(this.value)">
+          </div>
+          <div class="col text-start">
+            <input type="submit" class="boton-aceptar rounded-pill" value="Aceptar">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 mt-3">
+          <div class="form-floating container-buscar">
+            <input type="text" class="form-control rounded-pill buscar-proveedor" id="floatingInputInvalid" placeholder="" >
+            <label for="floatingInputInvalid" class="label-buscar"><i class="fa-solid fa-magnifying-glass"></i>  Buscar...</label>
+          </div>
+        </div>
+          <div class=" col-sm-12 col-md-12 col-lg-4 col-xl-4 mt-3">
+            <button class="reporte-crear rounded-pill text-start">
+              <p class="rounded-pill"><i class="fa-solid fa-download icon-generar-reporte"></i>  Generar reporte de proveedores</p>
+            </button>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 mt-3">
+            <button class="reporte-crear rounded-pill d-flex flex-row-reverse" value="mostrar" onclick="crearProveedor(this.value)">
+              <div class="icono-mas">
+                <i class="fa-solid fa-circle-plus icon-agregar-proveedor text-end"></i>
+              </div>
+              <div>
+                <p>Crear proveedor</p>
+              </div>
+            </button>
+          </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="text-center container-tabla col">
+          <table class="tabla">
+            <tr>
+              <th>Codigo</th>
+              <th>Tipo de proveedor</th>
+              <th>Nombre</th>
+              <th>Contacto</th>
+              <th>Dirección</th>
+              <th>Telefono</th>
+              <th>Estado</th>
+              <th>Operaciones</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Empresa</td>
+              <td>Avon</td>
+              <td>Yolanda</td>
+              <td>crr 73 #34c 123</td>
+              <td>3003890913</td>
+              <td>Disponible</td>
+              <td>
+                <div class="row iconos">
+                  <div class="col">
+                    <a href="#" onclick="editar()" class="boton-editar">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <i class="fa-solid fa-trash"></i>
+                  </div>
+                  <div class="col">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Empresa</td>
+              <td>Avon</td>
+              <td>Yolanda</td>
+              <td>crr 73 #34c 123</td>
+              <td>3003890913</td>
+              <td>Disponible</td>
+              <td>
+                <div class="row iconos">
+                  <div class="col">
+                    <a href="#" onclick="editar()" class="boton-editar">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <i class="fa-solid fa-trash"></i>
+                  </div>
+                  <div class="col">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Empresa</td>
+              <td>Avon</td>
+              <td>Yolanda</td>
+              <td>crr 73 #34c 123</td>
+              <td>3003890913</td>
+              <td>Disponible</td>
+              <td>
+                <div class="row iconos">
+                  <div class="col">
+                    <a href="#" onclick="editar()" class="boton-editar">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <i class="fa-solid fa-trash"></i>
+                  </div>
+                  <div class="col">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Empresa</td>
+              <td>Avon</td>
+              <td>Yolanda</td>
+              <td>crr 73 #34c 123</td>
+              <td>3003890913</td>
+              <td>Disponible</td>
+              <td>
+                <div class="row iconos">
+                  <div class="col">
+                    <a href="#" onclick="editar()" class="boton-editar">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <i class="fa-solid fa-trash"></i>
+                  </div>
+                  <div class="col">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid container-paginado">
+      <div>
+        <div class="row">
+          <div class="col d-flex paginado">
+            <a href="">
+              <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <p>5</p>
+            <a href="">
+              <i class="fa-solid fa-caret-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/b57527faac.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
