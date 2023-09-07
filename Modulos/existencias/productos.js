@@ -58,7 +58,10 @@ const validar = (cantidad, factura, price, product, description, fecha)=>{
 }
 
 const editar = ()=>{
-    window.open('file:///c%3A/Users/SENA/Downloads/pageMatissa%20v2-20230824T192507Z-001/pageMatissa%20v3/Modulos/compras/edtarCompra.html', 'Editar compra', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=1,width=800,height=700,left = 390,top = 50')
+    var rutaActual = window.location.href;
+    var nombreArchivo = rutaActual.split('/').pop();
+    var rutaCarpeta = rutaActual.replace(nombreArchivo, '');
+    window.open(rutaCarpeta + '/editarProducto.html', 'Editar compra', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=1,width=700,height=600,left = 390,top = 50')
 }
 
 const cerrar = ()=>{
