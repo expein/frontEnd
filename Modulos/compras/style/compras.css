@@ -32,11 +32,11 @@
 }
 
 .form-agregar-proveedor label{
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .form-agregar-proveedor input{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     margin-top: 10px;
     border: 1px solid black;
     text-align: center;
@@ -63,6 +63,10 @@
     margin-top: 2.5%;
 }
 
+.boton-agregar-detalle-compra{
+    margin-right: 20px;
+}
+
 .boton-cancelar{
     padding: 0px 10px 0px 10px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.35);
@@ -73,6 +77,7 @@
     border-style: solid;
     font-family: "Quicksand";
     font-weight: bold;
+    margin-left: 40px;
 }
 
 .boton-aceptar{
@@ -85,6 +90,7 @@
     border-style: solid;
     font-family: "Quicksand";
     font-weight: bold;
+    margin-left: 30px;
 }
 
 .label-buscar{

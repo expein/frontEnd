@@ -10,23 +10,43 @@ const crearCompra = (arg)=>{
         mostrarForm.style.display = "";
         ocultar.style.display = "none"
     }else if(arg == 'Cancelar'){
+        let cantidad, factura, price, product, proveedor, description, fecha;
+
+        cantidad = document.getElementById('cantidad').value
+        factura = document.getElementById("factura").value
+        price = document.getElementById('price').value
+        proveedor = document.getElementById('proveedor').value
+        product = document.getElementById('product').value
+        description = document.getElementById('description').value
+        fecha = document.getElementById('fecha').value
+
+        cantidad = ''
+        factura = ''
+        price = ''
+        proveedor = 0
+        product = 0
+        description = ''
+        fecha = ''
+
         mostrar.style.display = "none";
         mostrarForm.style.display = "none";
         ocultar.style.display = "";
+
     }
 }
 
 const validacion = ()=>{
-    let cantidad, factura, price, product, description, fecha;
+    let cantidad, factura, price, product, proveedor, description, fecha;
 
     cantidad = document.getElementById('cantidad').value
     factura = document.getElementById("factura").value
     price = document.getElementById('price').value
+    proveedor = document.getElementById('proveedor').value
     product = document.getElementById('product').value
     description = document.getElementById('description').value
     fecha = document.getElementById('fecha').value
 
-    let verificar = validar(cantidad, factura, price, product, description, fecha)
+    let verificar = validar(cantidad, factura, price, product, proveedor, description, fecha)
 
     if(verificar === true){
         let op = confirm('Esta seguro que desea registrar el proveedor')
@@ -36,7 +56,7 @@ const validacion = ()=>{
     }
 }
 
-const validar = (cantidad, factura, price, product, description, fecha)=>{
+const validar = (cantidad, factura, price, product, proveedor, description, fecha)=>{
     let = validate = true;
 
     if (
@@ -44,6 +64,7 @@ const validar = (cantidad, factura, price, product, description, fecha)=>{
       factura.trim() == "" ||
       price.trim() == "" ||
       product.trim() == 0 ||
+      proveedor.trim() ==  0 ||
       description.trim() == "" ||
       fecha.trim() == ""
     ) {
@@ -51,7 +72,7 @@ const validar = (cantidad, factura, price, product, description, fecha)=>{
         alert('Campos sin llenar')
     }else if(isNaN(cantidad) || isNaN(price)){
         validate = false;
-        alert('El campo cantidad o precio deben ser numericos')
+        alert('El campo cantidad y precio deben ser numericos')
     }
 
     return validate
