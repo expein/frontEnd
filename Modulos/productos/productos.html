@@ -9,57 +9,39 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container-fluid titulo-proveedores titulo-proveedor" id="ocultar">
+    <div class="container-fluid titulo-productos titulo-producto" id="ocultar">
         <div class="row">
           <div class="col-12">
             <h1>Listado de existencias</h1>
           </div>
         </div>
     </div>
-    <div class="container-fluid titulo-proveedores titulo-agregar-proveedor" id="mostrar" style="display: none;">
+    <div class="container-fluid titulo-producto titulo-agregar-producto" id="mostrar" style="display: none;">
       <div class="row">
         <div class="col-12">
           <h1>Registrar nuevo producto</h1>
         </div>
       </div>
   </div>
-  <div class="container-fluid form-agregar-proveedor" id="mostrarForm" style="display: none;">
+  <div class="container-fluid form-agregar-producto" id="mostrarForm" style="display: none;">
     <div class="row">
       <form action="" onsubmit="return validacion()">
         <div class="row">
           <div class="col">
-            <label for="">Codigo proveedor</label><br>
-            <input class="rounded-pill" type="text" name="id" value="1" id="" readonly>
+            <label for=""  class="label">Codigo producto</label><br>
+            <input class="rounded-pill" type="text" name="id" value="1" readonly>
           </div>
           <div class="col">
-            <label for="">Tipo de proveedor</label><br>
-            <select class="rounded-pill" name="tipo-proveedor" id="tipoProveedor">
-              <option value="0">Seleccione</option>
-              <option value="1">Empresa</option>
-              <option value="2">Persona</option>
-            </select>
-          </div>
-          <div class="col">
-            <label for="">Nombre</label><br>
+            <label for=""  class="label">Nombre del producto</label><br>
             <input class="rounded-pill" type="text" name="name" id="nombre">
           </div>
-        </div>
-        <div class="row">
           <div class="col">
-            <label for="">Direccion</label><br>
-            <input class="rounded-pill" type="text" name="direccion" id="address">
+            <label for="" class="label">Precio de venta</label><br>
+            <input class="rounded-pill" type="text" name="name" id="price">
           </div>
-          <div class="col">
-            <label for="">Telefono</label><br>
-            <input class="rounded-pill" type="text" name="phone" id="phone">
-          </div>
-          <div class="col">
-            <label for="">Stado</label><br>
-            <select class="rounded-pill" name="state" id="state">
-              <option value="0">Seleccione</option>
-              <option value="1">Empresa</option>
-              <option value="2">Persona</option>
-            </select>
+            <div class="col text-center">
+              <label for="" class="label">Descripción</label><br>
+              <textarea name="" id="description" cols="25" rows="3"></textarea>
           </div>
         </div>
         <div class="row justify-content-center botones">

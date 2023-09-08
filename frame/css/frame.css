@@ -133,6 +133,13 @@ img{
  width: 102%;
 }
 
+@media screen and (min-width:1500px) {
+    .frame {
+        height: 100%;
+        width: 101.5%;
+    }
+}
+
 @media screen and (max-width:912px) {
     .frame {
         height: 100%;
@@ -150,14 +157,14 @@ img{
 @media screen and (max-width:768px) {
     .frame {
         height: 100%;
-        width: 104%;
+        width: 118%;
     }
 }
 
 @media screen and (max-width:600px) {
     .frame {
-        height: 100%;
-        width: 150%;
+        height: 600%;
+        width: 156%;
     }
 }
 

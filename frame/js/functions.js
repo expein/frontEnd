@@ -406,20 +406,20 @@ const seeSidebar = ()=>{
 
     let seeSidebar = document.getElementById("sidebarMatissa")
 
-    if(window.innerWidth <= 600){
-        seeSidebar.classList.add('sidebar-matissa-desplegable')
-        seeSidebar.classList.remove('sidebar-matissa')
+    if (window.innerWidth <= 600) {
+      seeSidebar.classList.add("sidebar-matissa-desplegable");
+      seeSidebar.classList.remove("sidebar-matissa");
 
-        menuVisible = document.querySelector(".sidebar-matissa-desplegable")
+      menuVisible = document.querySelector(".sidebar-matissa-desplegable");
 
-        menuVisible.style.display = 'none'
-    }else if(window.innerWidth > 600){
-        seeSidebar.classList.add('sidebar-matissa')
-        seeSidebar.classList.remove('sidebar-matissa-desplegable')
+      menuVisible.style.display = "none";
+    } else if (window.innerWidth > 600) {
+      seeSidebar.classList.add("sidebar-matissa");
+      seeSidebar.classList.remove("sidebar-matissa-desplegable");
 
-        menuVisible = document.querySelector(".sidebar-matissa")
+      menuVisible = document.querySelector(".sidebar-matissa");
 
-        menuVisible.style.display = 'block'
+      menuVisible.style.display = "block";
     }
 }
 
