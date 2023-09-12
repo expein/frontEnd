@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Cita</title>
+  <link rel="stylesheet" href="styleC.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.10.1/dist/css/bootstrap-datepicker.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.10.1/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="controlador.js"></script>
+
+</head>
+<body>
+  <div class="container-fluid titulo-citas">
+    <div class="row">
+      <div class="col-12">
+        <h1>Agendar nueva cita</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-6 formulario">
+    <div class="row">
+      <div class="col-md-3 codigo text-center">
+        <label for="">Codigo de la cita</label><br>
+        <input class="form-control rounded-pill text-center" type="text" name="id" value="001" id="id" readonly><br><br>
+        <div class="mt-4 contenedor1">
+          <label for="" class="cliente text-center">Cliente</label><br>
+          <select class="form-select rounded-pill cliente text-center" name="cliente" id="cliente">
+            <option value="0">15</option>
+            <option value="1">12</option>
+            <option value="2">11</option>
+            <option value="3">10</option>
+            <option value="4">1</option>
+          </select>
+          <input class="form-control rounded-pill text-center mt-2 " type="text" name="id" value="Eder Barrero" id="agregar" readonly>
+        </div> 
+      </div>
+      <div class="col-md-4 text-center">
+        <label for="">Servicios</label><br>
+        <select class="form-select rounded-pill servicios" name="servicio" id="servicio">
+          <option value="0">Seleccione</option>
+          <option value="1">Motilada</option>
+          <option value="2">pecicure</option>
+          <option value="3">manicure</option>
+          <option value="4">keratina</option>
+        </select>
+        <input class="form-control rounded-pill text-center mt-2" type="text" name="agregar" value="Agregar Servicio" id="agregar" >
+      </div>
+      <div class="col-md-5 text-center">
+        <label class="fecha-hora " for="">Seleccione Fecha y Hora</label><br>
+        <div class="row">
+          <div class="col">
+            <select class="form-control rounded-pill hora" name="hora" id="hora">
+              <option value="0">Horario Disponible</option>
+              <option value="1">10 AM</option>
+              <option value="2">12 AM</option>
+              <option value="3">1 PM</option>
+              <option value="4">2 PM</option>
+            </select>
+          </div>
+          <div class="col">
+            <input class="form-control rounded-pill" type="date" name="fecha" id="fecha">
+          </div>
+          <div class="col mt-2 calendario2">  
+            <h3 class="calendario1">Agosto 2023</h3>
+            <ol>
+              <li class="day-name">Lun</li>
+              <li class="day-name">Mar</li>
+              <li class="day-name">Mié</li>
+              <li class="day-name">Jue</li>
+              <li class="day-name">Vie</li>
+              <li class="day-name">Sab</li>
+              <li class="day-name">Dom</li>
+              <li class="primer-dia">1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>29</li>
+              <li>30</li>
+              <li>31</li>
+            </ol>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center botones">
+    <div class="col text-end">
+      <input type="button" class="boton-cancelar rounded-pill" value="Cancelar" >
+    </div>
+    <div class="col">
+      <input type="submit" class="boton-aceptar rounded-pill" value="Aceptar" onclick="validacion()">
+    </div>
+  </div>
+  <hr>
+  <div class="form-floating">
+    <input type="text" class="form-control rounded-pill buscar-cita" id="floatingInputInvalid" placeholder="" >
+    <label for="floatingInputInvalid" class="label-buscar"><i class="fa-solid fa-magnifying-glass"></i>  Buscar...</label>
+  </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <button onclick="window.location.href = 'index.html';" class="visualizar">
+        <p class="rounded-pill" >Ver detalles de cita  <i class="fa-sharp fa-solid fa-eye" style="font-size: 20px; margin-left: 60px;"></i></p>
+      </button>
+    </div>
+      <div class="col">
+        <button onclick="window.location.href = 'crear.html';" class="crear">
+          <p class="rounded-pill" >Agregar cita <i class="fa-regular fa-square-plus" style="font-size: 20px; margin-left: 90px; text-align: center"></i></p>
+        </button>
+      </div>
+      <div class="col">
+        <button href="#" class="generar" style="padding: 10px;">
+          <p class="rounded-pill">  Generar reporte de citas<i class="fa-solid fa-download" style=" font: size 10px; margin-left: 20px;"></i></p>
+        </button>
+      </div>
+  </div>
+</div>
+<div class="tabla">
+    <table class="p-3 bg-light">
+        <tr>
+            <th>ID Cita</th>
+            <th>ID Cliente</th>
+            <th>Fecha Registro</th>
+            <th>Costo total</th>
+            <th>Estado</th>
+            <th colspan="3">Operaciones</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>24/06/2023</td>
+          <td>25.000</td>
+          <td>Completo</td>
+          <td><a href="#" onclick="editar()"><i class="fa-solid fa-pencil" style="color:#3CC3BD;"></i></a></td>
+          <td><a href="#"><i class="fa-sharp fa-solid fa-circle-xmark" style="color:#929292"></i></a></td>
+          <td>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>3</td>
+          <td>25/07/2022</td>
+          <td>27.000</td>
+          <td>Aplazado</td>
+          <td><a href="#" onclick="editar()" ><i class="fa-solid fa-pencil" style="color:#3CC3BD;"></i></a></td>
+          <td><a><i class="fa-sharp fa-solid fa-circle-xmark" style="color:#929292"></i></a></td>
+          <td>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </td>
+        </tr>
+    </table>
+</div>
+
+<script src="https://kit.fontawesome.com/b57527faac.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+ 
+</body>
+</html>

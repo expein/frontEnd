@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/recuperacionCont.css">
+    <script src="recuperar.js"></script>
+    <title>Registro</title>
+</head>
+<body> 
+    <form action="" onsubmit="return validacionFormulario1()">
+        <div class="conteiner1">
+            <div class="cont-registro1">
+                <h3>Recuperar Contraseña</h3>
+                <div class="form">
+                    <div class="imagen">
+                    <div class="inputs">
+                        <label>Confirmar su correo de verificación</label> 
+                        <input id="email1" class="input1" type="text" placeholder="Email">
+                        <br><br>
+                        <label>Ingresa el código de verificación</label>
+                        <input id="codigo1" class="input2" type="password" placeholder=""> 
+                    </div>
+                    <div class="small">
+                        <a href=""><strong><small>Reenviar codigo</small></strong></a>
+                    </div>
+                    <div class="buttons">
+                       <a href="../login/index.html" <button href="../frame/frame.html" class="cancelar" name="cancelar">Cancelar</button></a>
+                        <button href="../frame/frame.html" class="enviar" name="enviar">Enviar</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </form>
+    
+    <form action="" onsubmit="return validacionFormulario2()">
+        <div class="conteiner2">
+            <div class="cont-registro2">
+                <h3>Recuperar Contraseña</h3>
+                <div class="form">
+                    <div class="fields">
+                        <label>Ingrese su nueva contraseña</label> 
+                        <input id="password1" type="password" placeholder="">
+                        <br>
+                        <label>Confirme su contraseña</label>
+                        <input id="password2" type="password" placeholder="">
+                    </div>
+                    <div class="button">
+                        <a href="../login/index.html" <button href="../frame/frame.html" class="Cancelar" name="Cancelar">Cancelar</button></a>
+                        <button href="../frame/frame.html" class="Enviar" name="Enviar">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="recuperar.js"></script>
+</body>
+</html>

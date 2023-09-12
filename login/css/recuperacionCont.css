@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+body{
+    background-color: #ffffff;
+}
+.conteiner1 {
+    margin: 1% auto auto auto;
+    height: 325px;
+    width: 30%;
+    display: flex;  
+    
+}
+
+.cont-registro1 {
+    width: 100%;
+    background: #e2d4ff;
+    border-color: #859c9b;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: "Quicksand";
+}
+
+.cont-registro1 h3 {
+    max-width: 100%;
+    background: #3cc3bd;
+    padding: 3%;
+    font-family: "Merienda";
+    color: #ffffff;
+}
+
+.input1 {
+    width: 90%;
+    border: 0;
+    border-radius: 15px;
+    border-bottom: 1px solid white ;
+    text-decoration-color: white;
+    color: black;
+    font-family: "Quicksand";
+    font-weight: bold;
+    font-size: 15px;
+    height: 25px;
+
+}
+
+.input2 {
+    width: 70%;
+    border: 0;
+    border-radius: 15px;
+    border-bottom: 1px solid white ;
+    text-decoration-color: white;
+    color: black;
+    font-family: "Quicksand";
+    font-weight: bold;
+    font-size: 15px;
+    height: 60px;
+}
+
+.inputs {
+    position: relative;
+    top: 10px;
+    font-weight: bold;  
+}
+
+.small {
+    font-size: 12px;
+    margin-top: 11px;
+    margin-left: 50%;
+}
+.buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cancelar {
+    background-color: #3cc3bd;
+    transition: 0.3s;
+    color: white;
+    width: 100px;
+    padding: 2px 15px 2px 15px;
+    background: #d7f1f0;
+    color: black;
+    border-color: #d7f1f0;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 30px 30px 30px 30px;
+    font-family: "Quicksand";
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.enviar {
+    width: 100px;
+    padding: 2px 15px 2px 15px;
+    background: #444444;
+    color: #ffffff;
+    border-color: #d7f1f0;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 30px 30px 30px 30px;
+    font-family: "Quicksand";
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*.imagen {
+    background-image: url('../images/logo.png');
+    filter: hue-rotate(200deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}*/
+
+.conteiner2 {
+    margin: 2% auto auto auto;
+    height: 300px;
+    width: 28%;
+    display: flex;  
+}
+
+
+.cont-registro2 {
+    width: 100%;
+    background: #e2d4ff;
+    border-color: #859c9b;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: "Quicksand";
+}
+
+.cont-registro2 h3 {
+    max-width: 100%;
+    background: #3cc3bd;
+    padding: 3%;
+    font-family: "Merienda";
+    color: #ffffff;
+}
+
+.fields input {
+    width: 75%;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 15px;
+    border-bottom: 1px solid white ;
+    text-decoration-color: white;
+    color: black;
+    font-family: "Quicksand";
+    font-weight: bold;
+    font-size: 15px;
+    height: 25px;
+
+}
+
+.fields input:hover{
+    border-bottom: 1px solid rgb(165, 142, 165);
+    transition: 0.5s ;
+}
+
+.fields label {
+    position: relative;
+    top: 20px;
+    font-weight: bold;
+}
+
+.button {
+    margin-top: 40px;
+    text-align: center;
+}
+.Cancelar {
+
+    background-color: #3cc3bd;
+    transition: 0.3s;
+    color: white;
+    width: 100px;
+    padding: 2px 15px 2px 15px;
+    background: #d7f1f0;
+    color: black;
+    border-color: #d7f1f0;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 30px 30px 30px 30px;
+    font-family: "Quicksand";
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.Enviar {
+    width: 100px;
+    padding: 2px 15px 2px 15px;
+    background: #444444;
+    color: #ffffff;
+    border-color: #d7f1f0;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 30px 30px 30px 30px;
+    font-family: "Quicksand";
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}

@@ -66,9 +66,13 @@
             </div>
             <div class="row justify-content-center botones">
                 <div class="col text-end">
-                  <input type="button" class="boton-cancelar rounded-pill" value="Cancelar" onclick="cerrar()">
+                    <button type="button" class="boton-agregar-detalle-compra rounded-pill" onclick="AgregarDetalleCompra()">
+                        Agregar detalle
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
                 </div>
-                <div class="col">
+                <div class="col d-flex">
+                  <input type="button" class="boton-cancelar rounded-pill" style="margin-right: 20px;" value="Cancelar" onclick="cerrar()">
                   <input type="submit" class="boton-aceptar rounded-pill" value="Aceptar">
                 </div>
               </div>

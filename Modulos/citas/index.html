@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>citas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="controlador.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid titulo-citas">
+        <div class="row">
+          <div class="col-12">
+            <h1>Listado de Citas</h1>
+          </div>
+        </div>
+    </div>
+    <div class="form-floating">
+        <input type="text" class="form-control rounded-pill buscar-cita" id="floatingInputInvalid" placeholder="" >
+        <label for="floatingInputInvalid" class="label-buscar"><i class="fa-solid fa-magnifying-glass"></i>  Buscar...</label>
+      </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <button href="#" class="visualizar">
+            <p class="rounded-pill" >Ver detalles de cita  <i class="fa-sharp fa-solid fa-eye" style="font-size: 20px; margin-left: 60px;"></i></p>
+          </button>
+        </div>
+          <div class="col">
+            <button onclick="window.location.href = 'crear.html';" class="crear">
+              <p class="rounded-pill" >Agregar cita <i class="fa-regular fa-square-plus" style="font-size: 20px; margin-left: 90px; text-align: center"></i></p>
+            </button>
+          </div>
+          <div class="col">
+            <button href="#" class="generar" style="padding: 10px;">
+              <p class="rounded-pill">  Generar reporte de citas<i class="fa-solid fa-download" style=" font: size 10px; margin-left: 20px;"></i></p>
+            </button>
+          </div>
+      </div>
+    </div>
+    <div class="tabla">
+        <table class="p-3 bg-light" id="table">
+            <tr>
+                <th>ID Cita</th>
+                <th>ID Cliente</th>
+                <th>Fecha Registro</th>
+                <th>Costo total</th>
+                <th>Estado</th>
+                <th colspan="3">Operaciones</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>24/06/2023</td>
+              <td>25.000</td>
+              <td>Completo</td>
+              <td><a href="#" onclick="editar()"><i class="fa-solid fa-pencil" style="color:#3CC3BD;"></i></a></td>
+              <td><a href="#"><i class="fa-sharp fa-solid fa-circle-xmark" style="color:#929292"></i></a></td>
+              <td>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>3</td>
+              <td>25/07/2022</td>
+              <td>27.000</td>
+              <td>Aplazado</td>
+              <td><a href="#" onclick="editar()"><i class="fa-solid fa-pencil" style="color:#3CC3BD;"></i></a></td>
+              <td><a href="#"><i class="fa-sharp fa-solid fa-circle-xmark" style="color:#929292"></i></a></td>
+              <td>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+              </td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://kit.fontawesome.com/b57527faac.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/popups.js"></script>
+    <script src="./js/validations.js"></script>
+    <script src="./js/session.js"></script>
+    <script src="./js/delete.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fc79c38429.js" crossorigin="anonymous"></script>
+    <title>Clientes</title>
+</head>
+<body onload="loadArray();">
+    <div class="container-fluid create-tittle">
+        <div class="row">
+            <div class="col-12">
+                <h1>Agregar nuevo cliente</h1>
+            </div>
+        </div>
+    </div>
+    
+    <div class="create-body">
+        <form id="form" onsubmit="arrayClient();">
+            <div class="container-fluid">
+                <div class="text-center row mt-4 fields">
+                    <div class="col">
+                        <label for="" class="form-label">ID</label><br>
+                        <input type="text" class="input-bonito" id="IDClient" readonly>
+                    </div>
+                    <div class="col">
+                        <label for="" class="form-label">Nombres</label><br>
+                        <input type="text" name="" id="name" class="input-bonito">
+                    </div>
+                    <div class="col">
+                        <label for="" class="form-label">Correo</label><br>
+                        <input type="email" class="input-bonito" id="email">
+                    </div>
+                    <div class="col">
+                        <label for="" class="form-label">Contraseña</label><br>
+                        <input type="text" name="" id="password" class="input-bonito">
+                    </div>
+                </div>
+                <div class="text-center row mt-4 fields">
+                    <div class="col">
+                        <label for="" class="form-label">Dirección</label><br>
+                        <input type="text" class="input-bonito" id="address">
+                    </div>
+                    <div class="col">
+                        <label for="" class="form-label">Apellidos</label><br>
+                        <input type="text" name="" id="lastname" class="input-bonito">
+                    </div>
+                    <div class="col">
+                        <label for="" class="form-label">Teléfono</label><br>
+                        <input type="text" name="" id="telef" class="input-bonito">
+                    </div>
+                    <div class="col">
+                        <label for="" class="form-label">Fecha Nacimiento</label><br>
+                        <input type="date" name="" id="nacimiento" class="input-bonito">
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col text-end">
+                        <button type="button" class="cancel-btn" onclick="backPage();">
+                            Cancelar
+                        </button>
+                    </div>
+                    <div class="col text-start">
+                        <button type="submit" class="acept-btn" onclick="return valid();">
+                            Aceptar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="client-list-header d-flex justify-content-around">
+        <div class="mt-4">
+            <h1>Lista de clientes</h1>
+        </div>
+        <div class="col-5">
+            <div class="form-floating search">
+                <input type="text" class="form-control rounded-pill buscar-proveedor" id="floatingInputInvalid" placeholder="" >
+                <label for="floatingInputInvalid" class="label-buscar"><i class="fa-solid fa-magnifying-glass"></i>   Buscar cliente</label>
+            </div>
+        </div>
+    </div>
+    <div class="client-list-body" style="margin: 10px;">
+        <table class="table table-hover table-borderless mt-3 text-center table-sm ">
+            <thead>
+                <tr class="table-secondary">
+                    <th>ID Cliente</th>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Correo</th>
+                    <th>Teléfono</th>
+                    <th>Dirección</th>
+                    <th>Fecha Nacimiento</th>
+                    <th>Contraseña</th>
+                    <th class="p-3">Opciones</th>
+                </tr>
+            </thead>
+            <tbody id="clientTable">
+
+            </tbody>
+        </table>
+    </div>
+    <div class="container-fluid container-paginado">
+        <div>
+            <div class="row">
+                <div class="col d-flex paginado">
+                    <a href="">
+                        <i class="fa-solid fa-caret-left"></i>
+                    </a>
+                    <p>1</p>
+                    <a href="">
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

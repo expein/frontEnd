@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="../pedidos/styles/creacionPedidos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid titulo-pedidos">
+      <div class="row">
+        <div class="col-12">
+          <h1>Creacion de pedidos</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="conteiner-fluid" style="padding: 15px; font-family: 'Quicksand'; text-align: center;">
+      <div class="col">
+        <label for="">Seleccione el producto</label><br>
+        <select class="rounded-pill select" name="product" id="product">
+          <option value="0">Seleccione</option>
+          <option value="1">Shampoo</option>
+          <option value="2">Acondicionador</option>
+          <option value="3">Gomina</option>
+          <option value="4">Gel</option>
+        </select>
+      </div>
+
+      <div class="col">
+        <label for="" style="font-family: 'Quicksand';">Cliente</label><br>
+        <select class="rounded-pill select" name="product" id="product">
+          <option value="0">15</option>
+          <option value="1">18</option>
+          <option value="2">23</option>
+          <option value="3">24</option>
+          <option value="4">25</option>
+        </select>
+      </div>
+      
+      <div class="col">
+        <label for="" class="label text-center"></label><br>
+        <input class="rounded-pill" style="border: 1px solid black;" type="text" value="Eder Geovan Barrero" name="" id="" readonly>
+    </div>
+    </div>
+      
+    
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <div class="form-floating">
+            <input type="text" class="form-control rounded-pill buscar-pedido" id="floatingInputInvalid" placeholder="" >
+            <label for="floatingInputInvalid" class="label-buscar"><i class="fa-solid fa-magnifying-glass fa-2xl"></i> Buscar...</label>
+          </div>
+        </div>
+          <div class="col-6">
+            <a href="#" class="reporte-crear">
+              <p class="rounded-pill"><i class="fa-solid fa-download fa-2xl"></i>  Generar reporte de pedidos</p>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col text-center container-tabla">
+          <table class="tabla">
+            <tr>
+              <th>Codigo detalle <br> de pedido</th>
+              <th>Codigo pedido</th>
+              <th>Producto</th>
+              <th>Cantidad</th>
+              <th>Precio unitario</th>
+              <th>Subtotal</th>
+              <th>Operaciones</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>1</td>
+              <td>Perfume L&P</td>
+              <td>2</td>
+              <td>81.000</td>
+              <td>88.500</td>
+              <td>
+                <div class="row iconos">
+                  <div class="col">
+                    <a href="editarPedido.html" onclick="editar()" class="boton-editar">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <i class="fa-solid fa-trash"></i>
+                  </div>
+                  <div class="col">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>1</td>
+              <td>Esmalte M&M</td>
+              <td>11</td>
+              <td>65.000</td>
+              <td>66.000</td>
+              <td>
+                <div class="row iconos">
+                  <div class="col">
+                    <a href="editarPedido.html" onclick="editar()" class="boton-editar">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <i class="fa-solid fa-trash"></i>
+                  </div>
+                  <div class="col">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>1</td>
+              <td>Shampoo H&S</td>
+              <td>4</td>
+              <td>43.000</td>
+              <td>53.000</td>
+              <td>
+                <div class="row iconos">
+                  <div class="col">
+                    <a href="editarPedido.html" onclick="editar()" class="boton-editar">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <i class="fa-solid fa-trash"></i>
+                  </div>
+                  <div class="col">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>1</td>
+              <td>Keratina J&J</td>
+              <td>1</td>
+              <td>5.000</td>
+              <td>9.000</td>
+              <td>
+                <div class="row iconos">
+                  <div class="col">
+                    <a href="editarPedido.html" onclick="editar()" class="boton-editar">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <i class="fa-solid fa-trash"></i>
+                  </div>
+                  <div class="col">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid container-paginado">
+      <div>
+        <div class="row">
+          <div class="col d-flex paginado">
+            <a href="">
+              <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <p>1</p>
+            <a href="">
+              <i class="fa-solid fa-caret-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/b57527faac.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

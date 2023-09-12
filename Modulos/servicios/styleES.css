@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+
+.body{
+  background-color: #e2d4ff;
+}
+
+
+.titulo{
+    font-family: 'Merienda';
+    color: white;
+}
+
+.titulo-editar-servicio{
+    padding: 10px;
+    background-color: #3cc3bd;
+}
+
+.editar-servicio{
+    font-size: 40px;
+}
+
+.label{
+    font-family: 'Quicksand';
+    margin-top: 20px;
+}
+
+.form-editar-servicio select{
+        margin-bottom: 20px;
+        margin-top: 10px;
+        width: 200px;
+        height: 30px;
+        border: 1px solid black;
+        text-align: center;
+}
+
+.form-editar-servicio input{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.form-editar-servicio textarea{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 200px;
+    height: 75px;
+    border: 1px solid black;
+    border-radius: 20px ;
+    text-align: center;
+}
+
+.botones{
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+}
+
+.boton-cancelar{
+    padding: 0px 10px 0px 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.35);
+    background: #ffffff;
+    color: #232323;
+    border-color: #232323;
+    border-width: 1px;
+    border-style: solid;
+    font-family: "Quicksand";
+    font-weight: bold;
+    margin: auto;
+}
+
+.boton-aceptar{
+    padding: 0px 10px 0px 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.35);
+    background: #444444;
+    color: #ffffff;
+    border-color: #444444;
+    border-width: 1px;
+    border-style: solid;
+    font-family: "Quicksand";
+    font-weight: bold;
+    margin: auto;
+}
+.calendario2{
+    text-align: center;
+    width: 200px;
+    height: 160px;
+    font-size: 12px;
+    border: 1px solid black;
+    margin-left: 90px;
+    margin-bottom: 35px;   
+    border-radius: 20px;
+    background-color: #eee;
+     
+}
+
+.calendario1{
+    background-color: #e2d4ff;
+    border-radius: 20px;
+    width: 100%;
+}
+
+  ol{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    padding: 0;
+    
+  }
+  .primer-dia{
+    grid-column-start: 2;
+  }
+  .day-name{
+    font-weight: bold;
+    text-align: center;
+  }
+
+  li{
+    text-align: right;
+  }

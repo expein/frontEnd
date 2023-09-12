@@ -44,48 +44,46 @@
             <input class="rounded-pill" type="text" name="factura" id="factura">
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <label for="">Codigo detalle compra</label><br>
-            <input class="rounded-pill" type="text" name="id-detalle" value="1" id="idDetalle" readonly>
-          </div>
-          <div class="col">
-            <label for="">Proveedor</label><br>
-            <select class="rounded-pill" name="proveedor" id="proveedor">
-              <option value="0">Seleccione</option>
-              <option value="1">Avon</option>
-              <option value="2">Pantene</option>
-              <option value="3">Carla</option>
-              <option value="4">Andrea</option>
-            </select>
-          </div>
-          <div class="col">
-            <label for="">Producto</label><br>
-            <select class="rounded-pill" name="product" id="product">
-              <option value="0">Seleccione</option>
-              <option value="1">Shampoo</option>
-              <option value="2">Acondicionador</option>
-              <option value="3">Gomina</option>
-              <option value="4">Gel</option>
-            </select>
-          </div>
-          <div class="col">
-            <label for="">Precio</label><br>
-            <input class="rounded-pill" type="text" name="price" id="price">
-          </div>
-          <div class="col">
-            <label for="">Cantidad</label><br>
-            <input class="rounded-pill" type="text" name="cantidad" id="cantidad">
+        <div id="detallesCompra">
+          <div class="row" id="formDetalleCompra">
+            <div class="col">
+              <label for="">Codigo detalle compra</label><br>
+              <input class="rounded-pill" type="text" name="id-detalle" value="1" id="idDetalle" readonly>
+            </div>
+            <div class="col">
+              <label for="">Proveedor</label><br>
+              <select class="rounded-pill" name="proveedor" id="proveedor">
+                <option value="0">Seleccione</option>
+                <option value="1">Avon</option>
+                <option value="2">Pantene</option>
+                <option value="3">Carla</option>
+                <option value="4">Andrea</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="">Producto</label><br>
+              <select class="rounded-pill" name="product" id="product">
+                <option value="0">Seleccione</option>
+                <option value="1">Shampoo</option>
+                <option value="2">Acondicionador</option>
+                <option value="3">Gomina</option>
+                <option value="4">Gel</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="">Precio</label><br>
+              <input class="rounded-pill" type="text" name="price" id="price">
+            </div>
+            <div class="col">
+              <label for="">Cantidad</label><br>
+              <input class="rounded-pill" type="text" name="cantidad" id="cantidad">
+            </div>
           </div>
         </div>
         <div class="row justify-content-center botones">
           <div class="col text-end">
-            <button class="boton-agregar-detalle-compra rounded-pill">
+            <button type="button" class="boton-agregar-detalle-compra rounded-pill" onclick="AgregarDetalleCompra()">
               Agregar detalle
-              <i class="fa-solid fa-plus"></i>
-            </button>
-            <button class="boton-agregar-producto rounded-pill">
-              Agregar Producto
               <i class="fa-solid fa-plus"></i>
             </button>
           </div>

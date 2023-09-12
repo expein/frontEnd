@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+.titulo-ventas{
+    background-color: #3cc3bd;
+    color: white;
+    font-family: "Merienda";
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 5%;
+    border: 1px solid gray;
+    
+    
+}
+.table-ventas{
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.label-buscar{
+    font-size: 17px;
+    font-family: "Quicksand";
+}
+
+.reporte-crear{
+    text-decoration: none;
+}
+
+.reporte-crear p{
+    background-color: #444444;
+    height: 100%;
+    color: white;
+    font-family: 'Quicksand';
+    font-size: 17px;
+    padding-top: 15px;
+    text-align: center;
+    box-shadow: 3px 7px 10px black;
+}
+
+.buscar-venta{
+    box-shadow: 3px 7px 10px black;
+}
+
+/*Estilo buscador*/
+
+
+.container-tabla{
+    margin-top: 10%;
+    margin: 0 auto;
+    font-family: "Quicksand";
+}
+
+.tabla{
+    border-color: #161616;
+    border-width: 1px;
+    border-style: solid;
+    width: 100%;
+    margin-top: 10vh;
+}
+
+.tabla tr:hover{
+    background-color: rgb(218, 217, 217);
+}
+
+.tabla th{
+    border: 1px solid #161616;
+    background-color: #e5e5e5;
+    padding: 17px;
+}
+
+.tabla td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.iconos{
+    color: #3cc3bd;
+    font-size: 20px;
+}
+
+.boton-editar{
+    color: #3cc3bd;
+}
+
+/*swith*/
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 18px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #3cc3bd;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #3cc3bd;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /*Paginado*/
+
+.paginado{
+    justify-content: center;
+    font-size: 20px;
+}
+
+.paginado p{
+    margin-right: 15px;
+    margin-left: 15px;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+}
+
+.paginado a{
+    color: black;
+}
+
+.paginado i{
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+}
+
+.container-paginado{
+    margin-top: 2%;
+}
+
+

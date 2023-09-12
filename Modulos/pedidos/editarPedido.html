@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fc79c38429.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/editarPedido.css">
+    <title>Editar Cliente</title>
+</head>
+<body>
+    <div class="container-fluid edit-tittle">
+        <div class="row">
+            <div class="col-12">
+                <h1>Edición de pedidos</h1>
+            </div>
+        </div>
+    </div>
+    <div class="edit-body text-center" style="padding-bottom: 200px;">
+        <div class="justify-content-evenly d-flex mt-1">
+            <div>
+                <label for="" class="form-label">Codigo detalle pedido</label>
+                <input type="text" class="form-control rounded-pill" value="1" disabled>
+            </div>
+            <div>
+                <label for="" class="form-label">ID pedido</label>
+                <input type="text" class="form-control rounded-pill" value="1" disabled>
+
+            </div>
+        </div>
+        <div class="d-flex justify-content-evenly mt-1">
+            <div>
+                <label for="" class="form-label">ID Cliente</label>
+                <input type="text" class="form-control rounded-pill" value="1" disabled>
+            </div>
+            <div>
+                    <label for="" class="form-label" >Seleccione el producto</label><br>
+                    <select class="form-control rounded-pill" name="product" id="product">
+                      <option value="0">Seleccione</option>
+                      <option value="1">Shampoo</option>
+                      <option value="2">Acondicionador</option>
+                      <option value="3">Gomina</option>
+                      <option value="4">Gel</option>
+                    </select>
+            </div>
+        </div>
+        <div class="justify-content-evenly d-flex mt-1">
+            <div>
+                <label for="" class="form-label">Fecha</label>
+                <input type="text" class="form-control rounded-pill" value="">
+            </div>
+            <div>
+                <label for="" class="form-label">Cantidad</label>
+                <input type="text" class="form-control rounded-pill" value="2">
+            </div>
+        </div>
+        <div class="justify-content-evenly d-flex ml-1">
+            <div>
+                <label for="" class="form-label">Cliente</label>
+                <input type="text" class="form-control rounded-pill" value="Johan">
+            </div>
+        </div>
+
+
+
+    </div>
+
+    
+</body>
+</html>

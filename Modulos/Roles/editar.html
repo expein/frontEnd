@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="roles.js"></script>
+    <link rel="stylesheet" href="./css/editarRol.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body class="body">
+    <div class="container-fluid titulo-editar-compra">
+        <div class="row">
+            <div class="col-12 titulo text-center">
+                <h1 class="editar-compra">Edicion rol</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-3">
+        <form action="" class="form-editar-compra" onsubmit="return validacion()">
+            <div class="row">
+                <div class="col text-center">
+                    <label for="" class="label">ID</label><br>
+                    <input class="rounded-pill" type="text" value="1" name="" id="" readonly>
+                </div>
+                <div class="col text-center">
+                    <label for="" class="label">Nombre</label><br>
+                    <input class="rounded-pill" type="text" placeholder="Empleado" name="nombre" id="nombre">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <label for="" class="label">Permiso del rol</label><br>
+                    <select class="rounded-pill" name="permisos" id="permisos">
+                        <option value="0">ID de permisos</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                </div>
+            </div>
+            </div>
+            <div class="row justify-content-center botones mt-5">
+                <div class="col text-end mt-5">
+                  <input type="button" class="boton-cancelar rounded-pill" name="cancelar" value="Cancelar" onclick="cerrar()">
+                </div>
+                <div class="col mt-5">
+                  <input type="submit" class="boton-aceptar rounded-pill" name="aceptar" value="Aceptar">
+                </div>
+              </div>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/b57527faac.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
