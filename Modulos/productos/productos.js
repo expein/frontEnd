@@ -17,13 +17,14 @@ const registrarExistencia = (arg)=>{
 }
 
 const validacion = ()=>{
-    let nombre, price, description;
+    let nombre, price, description, fechaCaducidad;
 
     nombre = document.getElementById('nombre').value
     price = document.getElementById("price").value
     description = document.getElementById('description').value
+    fechaCaducidad = document.getElementById("fechaCaducidad").value;
 
-    let verificar = validar(nombre, price, description);
+    let verificar = validar(nombre, price, description, fechaCaducidad);
 
     if(verificar === true){
         let op = confirm('Esta seguro que desea registrar el proveedor')
@@ -33,13 +34,14 @@ const validacion = ()=>{
     }
 }
 
-const validar = (nombre, price, description) => {
+const validar = (nombre, price, description, fechaCaducidad) => {
   let = validate = true;
 
   if (
-    nombre.trim() == "" || 
+    nombre.trim() == "" ||
     price.trim() == "" ||
-    description.trim() == ""
+    description.trim() == "" ||
+    fechaCaducidad == ""
   ) {
     validate = false;
     alert("Campos sin llenar");
