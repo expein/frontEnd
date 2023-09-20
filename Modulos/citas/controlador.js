@@ -41,3 +41,11 @@ const editar = ()=>{
 const cerrar = ()=>{
    window.close()
 }
+
+const visualizar = ()=>{
+    window.open('view.html', 'Ver detalles citas', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=1,width=900,height=350,left = 390,top = 50')
+}
+
+const cerrarView = ()=>{
+   window.close()
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleV.css">
+    <script src="controlador.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>detalle</title>
+</head>
+<body class="body">
+    <div class="container-fluid titulo-vista">
+        <div class="row">
+            <div class="col-12-mt-4 titulo text-center">
+                <h1 class="vista">detalles de cita</h1>
+            </div>
+        </div>
+    </div>
+    <div class="tabla">
+        <table class="p-3 table">
+            <tr class="table-secondary">
+                <th>ID Cita</th>
+                <th>ID Cliente</th>
+                <th>Fecha Registro</th>
+                <th>Costo total</th>
+                <th>Estado</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>24/06/2023</td>
+              <td>25.000</td>
+              <td>Completo</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>3</td>
+              <td>25/07/2022</td>
+              <td>27.000</td>
+              <td>Aplazado</td>
+            </tr>
+        </table>
+    </div>
+    <div class=" col mt-4 row justify-content-center botones">
+        <div class="col text-end">
+          <input type="button" class="rounded-pill boton-cancelar" value="Cancelar" onclick="cerrarView()">
+        </div>
+        <div class="col">
+          <input type="submit" class="rounded-pill boton-aceptar" value="Aceptar">
+        </div>
+      </div>
+    
+</body>
+</html>
