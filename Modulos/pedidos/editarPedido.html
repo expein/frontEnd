@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/fc79c38429.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/editarPedido.css">
+    <script src="js/editarPedido.js"></script>
     <title>Editar Cliente</title>
 </head>
 <body>
@@ -17,55 +18,69 @@
             </div>
         </div>
     </div>
+    <form action="" onsubmit="return validarFormulario()">
     <div class="edit-body text-center" style="padding-bottom: 200px;">
         <div class="justify-content-evenly d-flex mt-1">
+            <!-- Código detalle pedido -->
             <div>
-                <label for="" class="form-label">Codigo detalle pedido</label>
-                <input type="text" class="form-control rounded-pill" value="1" disabled>
+                <label for="codigoDetallePedido" class="form-label">Codigo detalle pedido</label>
+                <input type="text" class="form-control rounded-pill" id="codigoDetallePedido" value="1" disabled>
             </div>
+            <!-- ID pedido -->
             <div>
-                <label for="" class="form-label">ID pedido</label>
-                <input type="text" class="form-control rounded-pill" value="1" disabled>
-
+                <label for="idPedido" class="form-label">ID pedido</label>
+                <input type="text" class="form-control rounded-pill" id="idPedido" value="1" disabled>
             </div>
         </div>
         <div class="d-flex justify-content-evenly mt-1">
+            <!-- ID Cliente -->
             <div>
-                <label for="" class="form-label">ID Cliente</label>
-                <input type="text" class="form-control rounded-pill" value="1" disabled>
+                <label for="idCliente" class="form-label">ID Cliente</label>
+                <input type="text" class="form-control rounded-pill" id="idCliente" value="1" disabled>
             </div>
+            <!-- Seleccione el producto -->
             <div>
-                    <label for="" class="form-label" >Seleccione el producto</label><br>
-                    <select class="form-control rounded-pill" name="product" id="product">
-                      <option value="0">Seleccione</option>
-                      <option value="1">Shampoo</option>
-                      <option value="2">Acondicionador</option>
-                      <option value="3">Gomina</option>
-                      <option value="4">Gel</option>
-                    </select>
+                <label for="product" class="form-label" >Seleccione el producto</label><br>
+                <select class="form-control rounded-pill" name="product" id="product">
+                  <option value="0">Seleccione</option>
+                  <option value="1">Shampoo</option>
+                  <option value="2">Acondicionador</option>
+                  <option value="3">Gomina</option>
+                  <option value="4">Gel</option>
+                </select>
             </div>
         </div>
         <div class="justify-content-evenly d-flex mt-1">
+            <!-- Fecha -->
             <div>
-                <label for="" class="form-label">Fecha</label>
-                <input type="text" class="form-control rounded-pill" value="">
+                <label for="fecha" class="form-label">Fecha</label>
+                <input type="date" class="form-control rounded-pill" id="fecha">
             </div>
+            <!-- Cantidad -->
             <div>
-                <label for="" class="form-label">Cantidad</label>
-                <input type="text" class="form-control rounded-pill" value="2">
+                <label for="cantidad" class="form-label">Cantidad</label>
+                <input type="text" class="form-control rounded-pill" id="cantidad">
             </div>
         </div>
         <div class="justify-content-evenly d-flex ml-1">
+            <!-- Cliente -->
             <div>
-                <label for="" class="form-label">Cliente</label>
-                <input type="text" class="form-control rounded-pill" value="Johan">
+                <label for="cliente" class="form-label">Cliente</label>
+                <input type="text" class="form-control rounded-pill" id="cliente">
+
+
+                <!-- Botones -->
+        <div class="row justify-content-center botones mt-5">
+            <div class="col text-end">
+              <input type="button" class="boton-cancelar rounded-pill" value="Cancelar" onclick="cerrar()">
+            </div>
+            <div class="col">
+              <input type="submit" class="boton-aceptar rounded-pill" value="Aceptar">
             </div>
         </div>
-
-
-
+            </div>
+        </div>
     </div>
-
-    
+    </form>
 </body>
 </html>
